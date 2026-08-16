@@ -160,6 +160,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+      - name: Get Runner IP
+        run: curl -s https://api.github.com/meta | jq -r '.actions[]'
       # Копируем docker-compose.production.yml на продакшен-сервер
       - name: Copy docker-compose.yml via ssh
         uses: appleboy/scp-action@master
