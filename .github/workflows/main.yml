@@ -166,7 +166,7 @@ jobs:
       # Передаём параметры для action appleboy/scp-action:
         with:
           host: ${{ secrets.HOST }}
-          port: 2222          # ← изменить порт
+          # port: 2222          # ← изменить порт
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           source: "docker-compose.production.yml"
