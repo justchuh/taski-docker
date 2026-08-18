@@ -12,8 +12,6 @@ ALLOWED_HOSTS = ['localhost',
                  'chuhandorik.ddns.net', '127.0.0.1']
 
 
-# Application definition
-
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'django.contrib.admin',
